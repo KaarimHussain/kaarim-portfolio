@@ -12,7 +12,9 @@ import {
   VerifiedIcon,
   XIcon,
 } from "./components/icons";
+import { JsonLd } from "./components/json-ld";
 import { TechChip } from "./components/tech-chip";
+import { WebMcp } from "./components/webmcp";
 import { ThemeToggle } from "./components/theme-toggle";
 
 /* ---------- layout primitives ---------- */
@@ -66,6 +68,8 @@ export default function Home() {
 
   return (
     <div className="min-h-dvh">
+      <JsonLd />
+      <WebMcp />
       {/* Header */}
       <header className="sticky top-0 z-20 border-b border-line bg-bg/80 backdrop-blur-md">
         <div className="mx-auto flex h-13 max-w-3xl items-center justify-between border-x border-line px-4">
